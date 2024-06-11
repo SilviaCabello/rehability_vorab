@@ -13,6 +13,7 @@ body {
     max-width: 1920px;
     overflow-x: hidden;
     margin: 0 auto;
+    padding-top: 240px;
 }
 
 h1, h2 {
@@ -71,10 +72,16 @@ section {
 //--------- Nav ---------//
 
 .nav {
-    padding: 60px 140px 100px 140px;
+    // padding: 60px 140px 100px 140px;
     margin: 0 auto;
     // position: fixed;
     z-index: 9999;
+    width: 100%;
+    max-width: 1640px;
+    position: fixed;
+    top: 60px;
+    left: 50%;
+    transform: translate(-50%);
 
     &__content {
         background-color: #D6DDE8;
