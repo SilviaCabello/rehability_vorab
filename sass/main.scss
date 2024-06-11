@@ -244,7 +244,7 @@ section {
 }
 
 
-//--------- .icons_list  ---------//
+//--------- icons_list  ---------//
 
 .icons_list {
     &__content {
@@ -293,6 +293,72 @@ section {
                             @include montse-semibold;
                             font-size: 24px;
                         }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+//--------- pin_cards  ---------//
+
+.pin_cards {
+    &__content {
+        @include container-1364;
+        display: flex;
+        flex-direction: column;
+        gap: 60px;
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+
+            &__item {
+                background-color: $grey;
+                padding: 50px 36px 50px 74px;
+                border-radius: 18px;
+                display: flex;
+                flex-direction: column;
+                gap: 24px;
+
+                h4 {
+                    color: $green;
+                    font-size: 24px;
+                    @include montse-semibold;
+                    position: relative;
+
+                    &::after {
+                        content: url("./../assets/img/pin.svg");
+                        position: absolute;
+                        display: block;
+                        top: 0;
+                        left: -40px;
+                    }
+                }
+
+                ul {
+                    padding: 0;
+                    margin: 0;
+
+                    li {
+                        list-style-type: none;
+                        margin: 0;
+                        padding: 0;
+                        font-size: 18px;
+
+                        a {
+                            color: $black;
+                            font-size: 18px;
+                            text-decoration: none;
+                        }
+                    }
+                }
+
+                ul.bold {
+                    li {
+                        @include montse-semibold
                     }
                 }
             }

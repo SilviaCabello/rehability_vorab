@@ -299,4 +299,71 @@ section {
   font-size: 24px;
 }
 
+.pin_cards__content {
+  width: 1364px;
+  margin: 0 auto;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+@media (max-width: 1600px) {
+  .pin_cards__content {
+    width: 80%;
+  }
+}
+@media (max-width: 1100px) {
+  .pin_cards__content {
+    width: 90%;
+  }
+}
+.pin_cards__content .cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+.pin_cards__content .cards__item {
+  background-color: #D6DDE8;
+  padding: 50px 36px 50px 74px;
+  border-radius: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.pin_cards__content .cards__item h4 {
+  color: #98C000;
+  font-size: 24px;
+  font-family: montseSemiBold;
+  font-weight: 600;
+  font-style: normal;
+  position: relative;
+}
+.pin_cards__content .cards__item h4::after {
+  content: url("./../assets/img/pin.svg");
+  position: absolute;
+  display: block;
+  top: 0;
+  left: -40px;
+}
+.pin_cards__content .cards__item ul {
+  padding: 0;
+  margin: 0;
+}
+.pin_cards__content .cards__item ul li {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+}
+.pin_cards__content .cards__item ul li a {
+  color: #271D20;
+  font-size: 18px;
+  text-decoration: none;
+}
+.pin_cards__content .cards__item ul.bold li {
+  font-family: montseSemiBold;
+  font-weight: 600;
+  font-style: normal;
+}
+
 /*# sourceMappingURL=main.css.map */
