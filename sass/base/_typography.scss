@@ -1,0 +1,52 @@
+//--------- Inter Regular ---------//
+
+@font-face {
+    src: url("../../assets/fonts/Inter-Regular.ttf");
+    font-family: interRegular;
+}
+
+@mixin inter-regular {
+    font-family: interRegular;
+    font-weight: 400;
+    font-style: normal;
+}
+
+//--------- Inter Bold ---------//
+
+@font-face {
+    src: url("../../assets/fonts/Inter-Bold.ttf");
+    font-family: interBold;
+}
+
+@mixin inter-bold {
+    font-family: interBold;
+    font-weight: 700;
+    font-style: normal;
+}
+
+//--------- Montserrat Regular ---------//
+
+@font-face {
+    src: url("../../assets/fonts/Montserrat-Regular.ttf");
+    font-family: montseRegular;
+}
+
+@mixin montse-regular {
+    font-family: montseRegular;
+    font-weight: 400;
+    font-style: normal;
+}
+
+//--------- Montserrat SemiBold ---------//
+
+@font-face {
+    src: url("../../assets/fonts/Montserrat-SemiBold.ttf");
+    font-family: montseSemiBold;
+}
+
+@mixin montse-semibold {
+    font-family: montseSemiBold;
+    font-weight: 600;
+    font-style: normal;
+}
+
