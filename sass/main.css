@@ -86,6 +86,7 @@ section {
 .nav {
   padding: 60px 140px 100px 140px;
   margin: 0 auto;
+  z-index: 9999;
 }
 .nav__content {
   background-color: #D6DDE8;
@@ -246,7 +247,7 @@ section {
   margin: 0 auto;
   position: relative;
   padding: 100px 130px;
-  background-color: #D6DDE8;
+  background-color: #EDF0F4;
   border-radius: 18px;
   display: flex;
   flex-direction: column;
@@ -323,7 +324,7 @@ section {
   gap: 30px;
 }
 .pin_cards__content .cards__item {
-  background-color: #D6DDE8;
+  background-color: #EDF0F4;
   padding: 50px 36px 50px 74px;
   border-radius: 18px;
   display: flex;
@@ -399,6 +400,96 @@ section {
   display: flex;
   flex-direction: column;
   gap: 20px;
+}
+
+.phone__content {
+  width: 1364px;
+  margin: 0 auto;
+  position: relative;
+  display: grid;
+  grid-template-columns: 1.5fr 4fr;
+  gap: 200px;
+}
+@media (max-width: 1600px) {
+  .phone__content {
+    width: 80%;
+  }
+}
+@media (max-width: 1100px) {
+  .phone__content {
+    width: 90%;
+  }
+}
+.phone__content .right {
+  background-color: #EDF0F4;
+  width: 100%;
+  border-radius: 18px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.phone__content .right a {
+  width: fit-content;
+  padding: 50px 0;
+  display: block;
+  font-size: 24px;
+  color: #271D20;
+  text-decoration: none;
+  position: relative;
+}
+.phone__content .right a::after {
+  content: url("./../assets/img/phone.svg");
+  display: block;
+  position: absolute;
+  left: -50px;
+  top: 50px;
+}
+
+.footer__content {
+  width: 1364px;
+  margin: 0 auto;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 100px 0;
+}
+@media (max-width: 1600px) {
+  .footer__content {
+    width: 80%;
+  }
+}
+@media (max-width: 1100px) {
+  .footer__content {
+    width: 90%;
+  }
+}
+.footer__content .left {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 30px;
+}
+.footer__content .right ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+}
+.footer__content .right ul li {
+  list-style-type: none;
+}
+.footer__content .right ul li a {
+  text-decoration: none;
+  color: #271D20;
+  transition: all 0.3 ease-in-out;
+}
+.footer__content .right ul li a:hover {
+  color: #98C000;
 }
 
 /*# sourceMappingURL=main.css.map */
