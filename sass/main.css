@@ -502,6 +502,51 @@ section {
   color: #98C000;
 }
 
+.block_text__container {
+  padding: 80px 0;
+  width: 1364px;
+  margin: 0 auto;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+@media (max-width: 1600px) {
+  .block_text__container {
+    width: 80%;
+  }
+}
+@media (max-width: 1100px) {
+  .block_text__container {
+    width: 90%;
+  }
+}
+.block_text__container a {
+  text-decoration: none;
+  color: #271D20;
+  transition: all 0.3s ease-in-out;
+}
+.block_text__container a:hover {
+  color: #98C000;
+}
+.block_text__container h2 {
+  margin: 0;
+  font-size: 24px;
+  font-family: montseSemiBold;
+  font-weight: 600;
+  font-style: normal;
+  margin-bottom: 10px;
+}
+.block_text__container p {
+  margin: 0;
+  font-size: 16px;
+}
+.block_text__container .item {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
 @media (max-width: 1700px) {
   .nav__content {
     width: 95%;
