@@ -565,6 +565,12 @@ section {
   .icons_list__content .icons {
     gap: 60px 60px;
   }
+  .img_text_big__content .columns__right img {
+    height: 450px;
+  }
+  .img_text_small__content .left img {
+    height: 400px;
+  }
 }
 @media (max-width: 1500px) {
   .icons_list__content .icons {
