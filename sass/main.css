@@ -548,6 +548,12 @@ section {
   font-style: normal;
   margin-bottom: 10px;
 }
+.block_text__container h4 {
+  font-family: montseSemiBold;
+  font-weight: 600;
+  font-style: normal;
+  margin-top: 10px;
+}
 .block_text__container p {
   margin: 0;
   font-size: 16px;
@@ -556,6 +562,17 @@ section {
   display: flex;
   flex-direction: column;
   gap: 8px;
+}
+.block_text__container table th {
+  text-align: left;
+  font-family: montseSemiBold;
+  font-weight: 600;
+  font-style: normal;
+  padding: 10px;
+}
+.block_text__container table td {
+  border-bottom: 1px solid #271D20;
+  padding: 10px;
 }
 
 @media (max-width: 1700px) {
