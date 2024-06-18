@@ -466,10 +466,11 @@ section {
   margin: 0 auto;
   position: relative;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
   padding: 100px 0;
+  gap: 40px;
 }
 @media (max-width: 1600px) {
   .footer__content {
@@ -486,6 +487,11 @@ section {
   flex-direction: row;
   align-items: center;
   gap: 30px;
+  flex-wrap: wrap;
+}
+.footer__content .left a {
+  text-decoration: none;
+  color: #003070;
 }
 .footer__content .right ul {
   display: flex;
@@ -631,6 +637,11 @@ section {
   .pin_cards__content .cards {
     grid-template-columns: repeat(2, 1fr);
   }
+  .footer__content {
+    gap: 30px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }
 @media (max-width: 1100px) {
   .img_text_big__content .columns__right img, .img_text_small__content .left img {
@@ -644,6 +655,12 @@ section {
   }
   .icons_list__content {
     padding: 70px 5%;
+  }
+  .footer__content .left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
   }
 }
 @media (max-width: 900px) {
@@ -697,11 +714,6 @@ section {
   .phone__content {
     grid-template-columns: 1fr;
     gap: 40px;
-  }
-  .footer__content {
-    gap: 30px;
-    flex-direction: column;
-    align-items: flex-start;
   }
 }
 @media (max-width: 600px) {
